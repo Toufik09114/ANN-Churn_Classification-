@@ -35,16 +35,15 @@ Account details (tenure, monthly charges, etc.)
 Usage statistics (service calls, complaints, etc.)
 
 ## How to Run
-Preprocess the data and train the model:
+## Build the model using the model.ipynb notebook:
 
 ```bash
-python src/preprocess.py
-python src/ann_model.py
+jupyter notebook notebooks/model.ipynb
 ```
 
-## Make predictions on new customer data:
+## Make predictions on new customer data using the prediction.ipynb notebook:
 ```bash
-python src/predict.py --input_data new_customer_data.csv
+jupyter notebook notebooks/prediction.ipynb
 ```
 
 ## Run the Streamlit app for real-time predictions:
@@ -53,25 +52,21 @@ streamlit run app.py
 ```
 
 ## Model Evaluation
-The model’s performance is evaluated based on:
-Accuracy
-Precision
-Recall
-F1-Score
-ROC-AUC
+The model’s performance is evaluated based on Accuracy
 
 ## App Deployment
 The app is deployed on Streamlit Cloud for public access. You can use the app to predict customer churn by simply uploading customer data.
 
 ## Future Improvements
-Experimenting with advanced deep learning architectures.
-Hyperparameter tuning for better performance.
-Adding more features to enhance the model's prediction capabilities.
+- Experimenting with advanced deep learning architectures.
+- Hyperparameter tuning for better performance.
+- Adding more features to enhance the model's prediction capabilities.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Check it out
-🔗 Live App - Customer Churn Prediction
+🔗 [Live App - Customer Churn Prediction](https://tiaenapwmgjgpasayv2pyf.streamlit.app/)
+
 
 
